@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>40</x><y>130</y><w>300</w><h>230</h></coordinates><panel_attributes>MastemindComponent
+--
+Props:
+- colors: Array&lt;Color&gt;
+- turn: int
+--
+{innerclass
+PlayerComponent
+--
+Props:
+- super
+- isWon
+innerclass}
+{innerclass
+BotComponent
+--
+super
+- colorFind: Array&lt;idColor&gt;
+- positionFind: Map&lt;id, idPosition&gt;
+innerclass}
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>40</y><w>150</w><h>80</h></coordinates><panel_attributes>ColorComponent
+--
+Props:
+- id: int
+- Color: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>370</y><w>300</w><h>80</h></coordinates><panel_attributes>BoardGameComponent
+--
+Props:
+- colorsPicked: Map&lt;turn, Map&lt;idPosition, Color&gt; &gt;
+- turn: int</panel_attributes><additional_attributes></additional_attributes></element></diagram>
