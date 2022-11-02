@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
+import internal from 'stream'
 
-export default class ColorComponent extends Component {
+type ColorProps = {
+    id: number,
+    color: string
+}
+
+type ColorState = {
+}
+
+export default class ColorComponent extends Component<ColorProps, ColorState> {
+
     render() {
         return (
-            <div>ColorComponent</div>
+            <h2>{this.props.id} {this.props.color}</h2>
         )
     }
 }

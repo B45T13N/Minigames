@@ -1,17 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ColorComponent from './Components/ColorComponent/ColorComponent';
+import FooterComponent from './Components/FooterComponent/FooterComponent';
+import HeaderComponent from './Components/HeaderComponent/HeaderComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <HeaderComponent />
       <main>
-        <ColorComponent />
+        <h3>Hello world</h3>
+        <ul>Voici la liste :</ul>
+        <ColorComponent id={1} color="blue" />
       </main>
+      <FooterComponent />
     </div>
   );
 }
