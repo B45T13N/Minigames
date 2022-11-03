@@ -4,8 +4,8 @@ import ColorComponent from './ColorComponent';
 import { link } from 'fs';
 import { act } from 'react-dom/test-utils';
 
-test('renders colors list', () => {
+test('renders color li', () => {
     act(() => {
-        render(<ColorComponent id={1} color="blue" />);
+        render(<ColorComponent id={1} color="blue" image_path='./images/blue_pin.svg' />);
     })
 });
