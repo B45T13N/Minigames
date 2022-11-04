@@ -6,7 +6,7 @@ import MastermindComponent from './Pages/MastermindComponent/MastermindComponent
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-screen h-screen">
       <HeaderComponent />
       <BrowserRouter>
         <Routes>

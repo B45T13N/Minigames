@@ -13,9 +13,8 @@ export default class ColorComponent extends Component<ColorProps, ColorState> {
 
     render() {
         return (
-            <div id={this.props.color} className="w-6/12 flex justify-between place-items-center" data-path={this.props.image_path}>
-                <img src={this.props.image_path} alt="" />
-                {this.props.color}
+            <div id={this.props.color} className="w-1/4 flex justify-evenly place-items-center" data-path={this.props.image_path}>
+                <img src={this.props.image_path} alt="" className='h-2/4' />
             </div>
 
         )
