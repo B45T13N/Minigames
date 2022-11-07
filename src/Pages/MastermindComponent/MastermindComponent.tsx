@@ -1,3 +1,4 @@
+import BoardComponent from "../../Components/BoardComponent/BoardComponent"
 import ColorComponent from "../../Components/ColorComponent/ColorComponent"
 
 const MastermindComponent: React.FC = () => {
@@ -19,6 +20,7 @@ const MastermindComponent: React.FC = () => {
                     <ColorComponent id={3} color={"yellow"} image_path={"/images/yellow_pin.svg"} />
                 </div>
             </div>
+            <BoardComponent />
         </main >
     )
 }
