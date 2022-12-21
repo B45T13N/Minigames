@@ -1,4 +1,6 @@
 import { Component } from 'react'
+import ColorComponent from "../ColorComponent/ColorComponent";
+import PinPlaceComponent from "../PinPlaceComponent/PinPlaceComponent";
 
 type BoardProps = {
 }
@@ -13,26 +15,10 @@ export default class BoardComponent extends Component<BoardProps, BoardState> {
 
             <div className="w-screen flex justify-center items-center">
                 <div id="boardGame" className='w-2/5 h-20 bg-black flex'>
-                    <div id='pinPlace1' className='w-1/4 border-solid border-2 border-black bg-gray-400 flex items-center justify-center'>
-                        <div className='bg-black w-3 h-3 rounded-full'>
-
-                        </div>
-                    </div>
-                    <div id='pinPlace2' className='w-1/4 border-x-0 border-r-2 border-solid border-2 border-black bg-gray-400 flex items-center justify-center'>
-                        <div className='bg-black w-3 h-3 rounded-full'>
-
-                        </div>
-                    </div>
-                    <div id='pinPlace3' className='w-1/4 border-x-0 border-solid border-2 border-black bg-gray-400 flex items-center justify-center'>
-                        <div className='bg-black w-3 h-3 rounded-full'>
-
-                        </div>
-                    </div>
-                    <div id='pinPlace4' className='w-1/4 border-solid border-2 border-black bg-gray-400 flex items-center justify-center'>
-                        <div className='bg-black w-3 h-3 rounded-full'>
-
-                        </div>
-                    </div>
+                    <PinPlaceComponent id={"pinPlace1"}/>
+                    <PinPlaceComponent id={"pinPlace2"}/>
+                    <PinPlaceComponent id={"pinPlace3"}/>
+                    <PinPlaceComponent id={"pinPlace4"}/>
                 </div>
             </div>
         )

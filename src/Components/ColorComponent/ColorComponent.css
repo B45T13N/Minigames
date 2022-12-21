@@ -3,4 +3,9 @@
     background-size: 50px;
     background-position: center;
     height: 50px;
+    width: 50px;
+}
+
+.pins:hover{
+    cursor: move;
 }

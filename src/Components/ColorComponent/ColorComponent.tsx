@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Draggable, {DraggableData, DraggableProps} from 'react-draggable';
+import Draggable, {DraggableData, DraggableEvent, DraggableProps} from 'react-draggable';
 
 import './ColorComponent.css';
 
@@ -17,16 +17,13 @@ type ColorState = {
         x: 0, y: 0
     }
 }
-
 export default class ColorComponent extends Component<ColorProps, ColorState> {
 
-    checkPinPosition = (e: any, position: any) => {
+    checkPinPosition = (e: DraggableEvent, position: any) => {
         const {x, y} = position;
         this.setState({controlledPosition: {x, y}});
     }
-
-    registerPinPosition = () => {
-        console.log(this.state.controlledPosition);
+    registerPinPosition = (e: any, position: any) => {
     }
 
     render() {
@@ -38,10 +35,11 @@ export default class ColorComponent extends Component<ColorProps, ColorState> {
                 onDrag = {this.checkPinPosition}
                 onStop = {this.registerPinPosition}
             >
-                <div id={this.props.color} style={divStyle} className="pins w-1/4 h-2/4" data-path={this.props.image_path}>
+                <div id={this.props.color} style={divStyle} className="pins" data-path={this.props.image_path}>
                 </div>
             </Draggable>
 
         )
     }
 }
+

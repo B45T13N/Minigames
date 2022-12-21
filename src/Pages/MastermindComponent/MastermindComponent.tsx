@@ -13,7 +13,7 @@ const MastermindComponent: React.FC = () => {
                 Color available :
             </legend>
             <div className="w-screen flex justify-center items-center">
-                <div id="color-list" className="flex w-full" >
+                <div id="color-list" className="flex w-full justify-center content-center" >
                     <ColorComponent id={0} color={"blue"} image_path={"/images/blue_pin.svg"} />
                     <ColorComponent id={1} color={"green"} image_path={"/images/green_pin.svg"} />
                     <ColorComponent id={2} color={"red"} image_path={"/images/red_pin.svg"} />
