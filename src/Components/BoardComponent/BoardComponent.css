@@ -1,0 +1,12 @@
+div#boardGameLine div {
+    border: 2px solid black;
+}
+
+div#boardGameLine div:nth-child(3) {
+    border-right: none;
+}
+
+div#boardGameLine div:nth-child(3),
+div#boardGameLine div:nth-child(2) {
+    border-left: none;
+}
